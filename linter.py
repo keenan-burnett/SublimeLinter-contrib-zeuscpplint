@@ -9,7 +9,7 @@ class Zeuscpplint(Linter):
     on_stderr = None  # handle stderr via split_match
     defaults = {
         'selector': 'source.c, source.c++',
-        '--filter=,': '-legal, -runtime/references',
+        '--filter=,': '-legal, -runtime/references, -readability/casting',
         '--linelength=,': '120',
     }
 
